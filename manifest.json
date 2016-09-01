@@ -1,13 +1,13 @@
 {
   "manifest_version": 2,
-  "name": "FFCS Quick",
+  "name": "V-TOP Easy",
   "version": "0.1.0",
-  "description": "Hassle free quick access to FFCS Student login.",
+  "description": "Better experience with using VIT student login.",
   "author": "Vatsal Joshi",
   "browser_action": {
     //"default_icon": "icon.png",
     "default_popup": "popup.html",
-    "default_title": "FFCS Quick"
+    "default_title": "V-TOP Easy"
   },
   "content_scripts": [
     // {
