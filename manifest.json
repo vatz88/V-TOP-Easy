@@ -28,19 +28,19 @@
     {
       "css": [
         "materialize.min.css",
-        "content_style.css"
+        "stud_login/stud_login_style.css"
       ],
       "js": [
         "jquery-3.1.0.min.js",
         "materialize.min.js",
-        "content_script.js"
+        "stud_login/stud_login_script.js"
       ],
       "matches": [
         "*://vtop.vit.ac.in/student/stud_login.asp"
       ],
       "all_frames": true
     }
-  ] //,
+  ] ,
   // "page_action": {
   //   "default_icon": { // optional
   //     "19": "images/icon19.png", // optional
@@ -53,4 +53,7 @@
   //   "activeTab",
   //   "https://ajax.googleapis.com/"
   // ]
+  "web_accessible_resources": [
+    "stud_login/stud_login.html"
+  ]
 }
