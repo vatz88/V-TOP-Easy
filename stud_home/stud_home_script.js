@@ -7,6 +7,8 @@ $(function () {
     // $('tr').contents().unwrap();
     // $('td').contents().unwrap();
     // $('th').contents().unwrap();
+
+    // Removing inline css
     $('font').contents().unwrap();
     $('u').contents().unwrap();
     $('*[style]').removeAttr('style');
@@ -26,9 +28,12 @@ $(function () {
     // $('tbody').replaceWith('<div>' + $('tbody').html() +'</div>');
     // $('tr').replaceWith('<div>' + $('tr').html() +'</div>');
     // $('td').replaceWith('<div>' + $('td').html() +'</div>');
+
+    // Remove unnecessary elements
     $('#GOOGLE_INPUT_CHEXT_FLAG').remove();
     $('iframe').remove();
 
+    // Replace table and its childrens with div or appropriate tag
     while ($('table').length > 0) {
         $('table').eq(0).replaceWith('<div class="container-fluid">' + $('table').eq(0).html() + '</div>');
     }
@@ -54,12 +59,12 @@ $(function () {
     while ($("img[src='HTMLGraph/images/1x1_83C4FE.gif']").length > 0) {
         var imgTitle = $("img[src='HTMLGraph/images/1x1_83C4FE.gif']").eq(0).attr('title');
         imgTitle = imgTitle.split(":");
-        if(imgTitle[1]>75){
-            $("#attendenceCard").append("<div class='col'>" + imgTitle[0] + " " + imgTitle[1] + "%<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
-        }else if(imgTitle[1]==75){
-            $("#attendenceCard").append("<div class='col' style='color:orange'>" + imgTitle[0] + " " + imgTitle[1] + "%<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
-        }else{
-            $("#attendenceCard").append("<div class='col' style='color:red'>" + imgTitle[0] + " " + imgTitle[1] + "%<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
+        if (imgTitle[1] > 75) {
+            $("#attendenceCard").append("<div class='col'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
+        } else if (imgTitle[1] == 75) {
+            $("#attendenceCard").append("<div class='col' style='color:orange'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
+        } else {
+            $("#attendenceCard").append("<div class='col' style='color:red'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
         }
         $("img[src='HTMLGraph/images/1x1_83C4FE.gif']").eq(0).remove();
     }
