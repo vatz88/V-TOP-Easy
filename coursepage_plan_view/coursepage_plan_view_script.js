@@ -1,5 +1,6 @@
 $(function () {
     $("link[href='style2.css']").remove(); //remove remove default css file
+    $("link[href='style.css']").remove();
 
     // $("body").addClass("container");
     // $('body').load(chrome.extension.getURL("stud_login/stud_login.html")); //Content inside body tag will be replaced by content in stud_login.html
@@ -50,7 +51,7 @@ $(function () {
     // }
     // $('b').remove();
     while ($('b').length > 0) {
-        $('b').eq(0).replaceWith("<h6>" + $('b').eq(0).html() + "</h6>");
+        $('b').eq(0).replaceWith("<p class='flow-text'>" + $('b').eq(0).html() + "</p>");
     }
     while ($('font').length > 0) {
         $('font').eq(0).replaceWith('<div class="flow-text">' + $('font').eq(0).html() + '</div>');
@@ -79,7 +80,8 @@ $(function () {
         i--;
         $(".btn").parent().eq(i).replaceWith('<form method="post" action="coursepage_plan_display.asp">' + $(".btn").parent().eq(i).html() + '</form>');
     }
-    $(".btn").parent().css('float', 'right');
+    // $(".btn").parent().css('float', 'right');
+    $(".btn").parent().addClass('right');
 
     // while ($('table').length > 0) {
     //     $('table').eq(0).replaceWith('<div class="container-fluid">' + $('table').eq(0).html() + '</div>');

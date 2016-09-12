@@ -1,6 +1,6 @@
 $(function () {
     $("link[href='style2.css']").remove(); //remove remove default css file
-    $('head').text('');
+    $("link[href='style.css']").remove();
     $("body").addClass("container");
     // $('body').load(chrome.extension.getURL("stud_login/stud_login.html")); //Content inside body tag will be replaced by content in stud_login.html
     // $('table').contents().unwrap();
@@ -33,6 +33,8 @@ $(function () {
     $('table:last').remove();
     $('img').remove();
     $('table').eq(0).remove();
+    $('iframe').remove();
+    $('.hiddendiv.common').remove();
 
     // $('table').replaceWith('<div>' + $('table').html() +'</div>');
     // $('tbody').replaceWith('<div>' + $('tbody').html() +'</div>');
@@ -55,9 +57,20 @@ $(function () {
     while ($('th').length > 0) {
         $('th').eq(0).replaceWith('<h6>' + $('th').eq(0).html() + '</h6>');
     }
+
+    // marquee title
+    var x_marquee = $('marquee');
+    var x_title = $("a[onclick]");
+    for(var i=0; i<x_marquee.length; ++i){
+        var title = x_marquee.eq(i).find('title').text();
+        var title_onclick = x_title.eq(i).attr('onclick');
+        x_marquee.eq(i).before('<hr><a class="flow-text" href="#" onclick="' + title_onclick + '">' + title + '</a><div class="divider"></div>');
+    }
+    x_title.remove();
+
     // $('b').remove();
     while ($('b').length > 0) {
-        $('b').eq(0).replaceWith("<h6>" + $('b').eq(0).html() + "</h6>");
+        $('b').eq(0).replaceWith("<p class='flow-text'>" + $('b').eq(0).html() + "</p>");
     }
 
     // if($("marquee body").text() == ''){

@@ -1,5 +1,4 @@
 body {
-    font-family: sans-serif !important;
     font-size: small !important;
     background-color: #f5f5f5 !important;
     color: #616161 !important;
@@ -13,6 +12,10 @@ input:-webkit-autofill {
     color: #616161 !important;
 }
 
+marquee {
+    max-height: 500px;
+}
+
 marquee a:hover {
     transition: font-size 0.5s !important;
 }
@@ -21,6 +24,12 @@ marquee a:hover {
     font-size: medium !important;
     transition: font-size 0.25s !important;
 }
+
+#attendenceCard{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+
 /*.container-fluid {
     background-color: white
 }*/

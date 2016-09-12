@@ -8,6 +8,9 @@
         "default_popup": "popup.html",
         "default_title": "V-TOP Easy"
     },
+    "permissions": [
+        "tabs"
+    ],
     "content_scripts": [
         {
             "css": [
@@ -68,6 +71,21 @@
             ],
             "matches": [
                 "*://vtop.vit.ac.in/student/coursepage_plan_view.asp*"
+            ],
+            "all_frames": true
+        },
+        {
+            "css": [
+                "materialize.min.css",
+                "coursepage_plan_display/coursepage_plan_display_style.css"
+            ],
+            "js": [
+                "jquery-3.1.0.min.js",
+                "materialize.min.js",
+                "coursepage_plan_display/coursepage_plan_display_script.js"
+            ],
+            "matches": [
+                "*://vtop.vit.ac.in/student/coursepage_plan_display.asp"
             ],
             "all_frames": true
         }
