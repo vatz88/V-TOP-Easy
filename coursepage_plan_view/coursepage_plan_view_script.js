@@ -100,4 +100,6 @@ $(function () {
 
     $('#GOOGLE_INPUT_CHEXT_FLAG').remove();
     $('iframe').remove();
+
+    $('.card-panel').addClass('hoverable');
 });
