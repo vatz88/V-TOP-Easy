@@ -22,7 +22,7 @@ marquee a:hover {
 }
 
 marquee a:hover {
-    font-size: medium !important;
+    font-size: larger !important;
     transition: font-size 0.25s !important;
 }
 
