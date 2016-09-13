@@ -30,7 +30,7 @@ $(function () {
     for(var i=0; i<x_marquee.length; ++i){
         var title = x_marquee.eq(i).find('title').text();
         var title_onclick = x_title.eq(i).attr('onclick');
-        x_marquee.eq(i).before('<hr><a class="flow-text" href="#" onclick="' + title_onclick + '">' + title + '</a><div class="divider"></div>');
+        x_marquee.eq(i).before('<hr><a href="#" onclick="' + title_onclick + '">' + title + '</a><div class="divider"></div>');
     }
     x_title.remove();
 
@@ -63,7 +63,7 @@ $(function () {
     }
     // $('b').remove();
     while ($('b').length > 0) {
-        $('b').eq(0).replaceWith("<p class='flow-text'>" + $('b').eq(0).html() + "</p>");
+        $('b').eq(0).replaceWith("<p>" + $('b').eq(0).html() + "</p>");
     }
 
     //Attendence

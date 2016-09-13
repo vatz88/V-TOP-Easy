@@ -60,13 +60,11 @@
         {
             "css": [
                 "materialize.min.css",
-                // "bootstrap.min.css",
                 "coursepage_plan_view/coursepage_plan_view_style.css"
             ],
             "js": [
                 "jquery-3.1.0.min.js",
                 "materialize.min.js",
-                // "bootstrap.min.js",
                 "coursepage_plan_view/coursepage_plan_view_script.js"
             ],
             "matches": [
@@ -77,13 +75,11 @@
         {
             "css": [
                 "materialize.min.css",
-                // "bootstrap.min.css",
                 "attn_report/attn_report_style.css"
             ],
             "js": [
                 "jquery-3.1.0.min.js",
                 "materialize.min.js",
-                // "bootstrap.min.js",
                 "attn_report/attn_report_script.js"
             ],
             "matches": [

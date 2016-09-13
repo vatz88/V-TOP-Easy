@@ -64,13 +64,13 @@ $(function () {
     for(var i=0; i<x_marquee.length; ++i){
         var title = x_marquee.eq(i).find('title').text();
         var title_onclick = x_title.eq(i).attr('onclick');
-        x_marquee.eq(i).before('<hr><a class="flow-text" href="#" onclick="' + title_onclick + '">' + title + '</a><div class="divider"></div>');
+        x_marquee.eq(i).before('<hr><a href="#" onclick="' + title_onclick + '">' + title + '</a><div class="divider"></div>');
     }
     x_title.remove();
 
     // $('b').remove();
     while ($('b').length > 0) {
-        $('b').eq(0).replaceWith("<p class='flow-text'>" + $('b').eq(0).html() + "</p>");
+        $('b').eq(0).replaceWith("<p>" + $('b').eq(0).html() + "</p>");
     }
 
     // if($("marquee body").text() == ''){
@@ -78,7 +78,7 @@ $(function () {
     // }
     $('marquee').addClass('card-panel');
     // $("marquee:not(div)").remove();
-    $('body').prepend("<div class='card-panel center-align'><div class='row'><h2>V-TOP Easy</h2></div></div><div class='row center-align flow-text'><div class='col s6'><a href='http://vtop.vit.ac.in/student/stud_login.asp' class='btn'>Student Login</a></div><div class='col s6'><a href='http://vtop.vit.ac.in/parent/parent_login.asp' class='btn'>Parent Login</a></div></div>");
+    $('body').prepend("<div class='card-panel center-align'><div class='row'><h2>V-TOP Easy</h2></div></div><div class='row center-align'><div class='col s6'><a href='http://vtop.vit.ac.in/student/stud_login.asp' class='btn'>Student Login</a></div><div class='col s6'><a href='http://vtop.vit.ac.in/parent/parent_login.asp' class='btn'>Parent Login</a></div></div>");
 
     $('.card-panel').addClass('hoverable');
 });

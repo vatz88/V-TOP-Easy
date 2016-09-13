@@ -51,10 +51,10 @@ $(function () {
     // }
     // $('b').remove();
     while ($('b').length > 0) {
-        $('b').eq(0).replaceWith("<p class='flow-text'>" + $('b').eq(0).html() + "</p>");
+        $('b').eq(0).replaceWith("<p>" + $('b').eq(0).html() + "</p>");
     }
     while ($('font').length > 0) {
-        $('font').eq(0).replaceWith('<div class="flow-text">' + $('font').eq(0).html() + '</div>');
+        $('font').eq(0).replaceWith('<div>' + $('font').eq(0).html() + '</div>');
     }
     $('table').eq(0).replaceWith('<div class="container">' + $('table').eq(0).html() + '</div>');
     $('table').eq(0).replaceWith('<div class="card-panel">' + $('table').eq(0).html() + '</div>');
