@@ -77,6 +77,38 @@
         {
             "css": [
                 "materialize.min.css",
+                // "bootstrap.min.css",
+                "attn_report/attn_report_style.css"
+            ],
+            "js": [
+                "jquery-3.1.0.min.js",
+                "materialize.min.js",
+                // "bootstrap.min.js",
+                "attn_report/attn_report_script.js"
+            ],
+            "matches": [
+                "*://vtop.vit.ac.in/student/attn_report.asp*"
+            ],
+            "all_frames": true
+        },
+        {
+            "css": [
+                "materialize.min.css",
+                "exam_schedule/exam_schedule_style.css"
+            ],
+            "js": [
+                "jquery-3.1.0.min.js",
+                "materialize.min.js",
+                "exam_schedule/exam_schedule_script.js"
+            ],
+            "matches": [
+                "*://vtop.vit.ac.in/student/exam_schedule.asp*"
+            ],
+            "all_frames": true
+        },
+        {
+            "css": [
+                "materialize.min.css",
                 "coursepage_plan_display/coursepage_plan_display_style.css"
             ],
             "js": [
@@ -85,7 +117,22 @@
                 "coursepage_plan_display/coursepage_plan_display_script.js"
             ],
             "matches": [
-                "*://vtop.vit.ac.in/student/coursepage_plan_display.asp"
+                "*://vtop.vit.ac.in/student/coursepage_plan_display.asp*"
+            ],
+            "all_frames": true
+        },
+        {
+            "css": [
+                "materialize.min.css",
+                "marks/marks_style.css"
+            ],
+            "js": [
+                "jquery-3.1.0.min.js",
+                "materialize.min.js",
+                "marks/marks_script.js"
+            ],
+            "matches": [
+                "*://vtop.vit.ac.in/student/marks.asp*"
             ],
             "all_frames": true
         }
