@@ -70,16 +70,39 @@ $(function () {
     $("<div class='card-panel'><div class='row' id='attendenceCard'></div></div>").insertBefore(".main_content");
     while ($("img[src='HTMLGraph/images/1x1_83C4FE.gif']").length > 0) {
         var imgTitle = $("img[src='HTMLGraph/images/1x1_83C4FE.gif']").eq(0).attr('title');
+        // var imgTitlel75 = $("img[src='HTMLGraph/images/1x1_FFC19F.gif']").eq(0).attr('title');
         imgTitle = imgTitle.split(":");
-        if (imgTitle[1] > 75) {
-            $("#attendenceCard").append("<div class='col'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
-        } else if (imgTitle[1] == 75) {
-            $("#attendenceCard").append("<div class='col' style='color:orange'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
-        } else {
-            $("#attendenceCard").append("<div class='col' style='color:red'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
-        }
+        // imgTitlel75 = imgTitlel75.split(":");
+        
+        // >75
+        $("#attendenceCard").append("<div class='col'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
+        // <75
+        // $("#attendenceCard").append("<div class='col' style='color:red'>" + imgTitlel75[0] + " " + "<b>" + imgTitlel75[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitlel75[1] + "%'></div></div></div>");
+
+        // if (imgTitle[1] > 75) {
+            
+        // } else if (imgTitle[1] == 75) {
+        //     $("#attendenceCard").append("<div class='col' style='color:orange'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
+        // } else {
+        //     // $("#attendenceCard").append("<div class='col' style='color:red'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
+        //     $("#attendenceCard").append("<div class='col' style='color:red'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
+        // }
         $("img[src='HTMLGraph/images/1x1_83C4FE.gif']").eq(0).remove();
+        // $("img[src='HTMLGraph/images/1x1_FFC19F.gif']").eq(0).remove();
     }
+    while ($("img[src='HTMLGraph/images/1x1_FFC19F.gif']").length > 0) {
+        // var imgTitle = $("img[src='HTMLGraph/images/1x1_83C4FE.gif']").eq(0).attr('title');
+        var imgTitlel75 = $("img[src='HTMLGraph/images/1x1_FFC19F.gif']").eq(0).attr('title');
+        // imgTitle = imgTitle.split(":");
+        imgTitlel75 = imgTitlel75.split(":");
+        
+        // <75
+        $("#attendenceCard").append("<div class='col' style='color:red'>" + imgTitlel75[0] + " " + "<b>" + imgTitlel75[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitlel75[1] + "%'></div></div></div>");
+
+        $("img[src='HTMLGraph/images/1x1_FFC19F.gif']").eq(0).remove();
+    }
+
+
     $(".main_content").remove();
 
     $('.card-panel').addClass('hoverable');
