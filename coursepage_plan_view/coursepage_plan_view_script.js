@@ -9,6 +9,7 @@ $(function () {
     // $('tr').contents().unwrap();
     // $('td').contents().unwrap();
     // $('th').contents().unwrap();
+    $('center').eq(0).replaceWith('<h5 class="center-align">' + $('center').eq(0).html() + '</h5>');
 
     // Removing inline css
     $('font').contents().unwrap();
