@@ -103,6 +103,7 @@ $(function () {
 
     $('#GOOGLE_INPUT_CHEXT_FLAG').remove();
     $('iframe').remove();
+    $('br').remove();
 
     $('.card-panel').addClass('hoverable');
 });
