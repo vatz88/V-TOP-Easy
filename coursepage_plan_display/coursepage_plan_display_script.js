@@ -9,25 +9,21 @@ $(function () {
     // $('th').contents().unwrap();
 
     // Removing inline css
-    // $('font').contents().unwrap();
+    $('font').contents().unwrap();
     $('u').contents().unwrap();
-    // $('*[style]').removeAttr('style');
-    // $('*').removeAttr('cellspacing');
-    // $('*').removeAttr('cellpadding');
-    // $('*').removeAttr('width');
-    // $('*').removeAttr('height');
-    // $('*').removeAttr('bordercolor');
-    // $('*').removeAttr('bgcolor');
-    // $('*').removeAttr('border');
-    // $('*').removeAttr('align');
-    // $('*').removeAttr('valign');
-    // $('*').removeAttr('colspan');
-    // $('*').removeAttr('color');
+    $('*[style]').removeAttr('style');
+    $('*').removeAttr('cellspacing');
+    $('*').removeAttr('cellpadding');
+    $('*').removeAttr('width');
+    $('*').removeAttr('height');
+    $('*').removeAttr('bordercolor');
+    $('*').removeAttr('bgcolor');
+    $('*').removeAttr('border');
+    $('*').removeAttr('align');
+    $('*').removeAttr('valign');
+    $('*').removeAttr('colspan');
+    $('*').removeAttr('color');
 
-    // $('table').replaceWith('<div>' + $('table').html() +'</div>');
-    // $('tbody').replaceWith('<div>' + $('tbody').html() +'</div>');
-    // $('tr').replaceWith('<div>' + $('tr').html() +'</div>');
-    // $('td').replaceWith('<div>' + $('td').html() +'</div>');
     $('center').eq(0).replaceWith('<h5 class="center-align">' + $('center').eq(0).html() + '</h5>');
 
     // First table with course info
@@ -42,26 +38,32 @@ $(function () {
     $('.col').last().remove();//remove 'ALL'
     $('tr').eq(0).remove();
     $('table').eq(0).replaceWith('<div class="card-panel">' + $('table').eq(0).html() + '</div>');
+    // End of first table
+
+    // $('td').replaceWith('<div class="col">' + $('td').html() +'</div>');
+    // $('tr').replaceWith('<div class="row">' + $('tr').html() +'</div>');
+    // $('table').replaceWith('<div class="card-panel">' + $('table').html() +'</div>');
+    // $('tbody').replaceWith('<div>' + $('tbody').html() +'</div>');
 
     // $('tr').eq(0).remove();
     // $('table').eq(1).replaceWith('<div class="card-panel">' + $('table').eq(1).html() + '</div>');
 
-    // // $('form').eq(0).replaceWith('<div class="container">' + $('table').eq(0).html() + '</div>');
-    // var x = $('form').length;
-    // for (var i=x-1; i >= 0; --i) {
-    //     $('form').eq(i).replaceWith("<form method='post' action='syllabus_file.asp'>" + $('form').eq(i).html() + "</form>");
+    // convert tr to .row and td to .col
+    while ($('th').length > 0) {
+        $('th').eq(0).replaceWith('<h6>' + $('th').eq(0).html() + '</h6>');
+    }
+    while ($('td').length > 0) {
+        $('td').eq(0).replaceWith('<div class="col">' + $('td').eq(0).html() + '</div>');
+    }
+    // while ($('font').length > 0) {
+    //     $('font').eq(0).replaceWith('<div class="col">' + $('font').eq(0).html() + '</div>');
     // }
-    // // $('form').addClass("card-panel");
-    // // $("form").before("<div class='formCardPanel'>");
-    // // $(".submit5").after("</div>");
-    // // $('.formCardPanel').addClass('card-panel');
-
-    // // while ($('th').length > 0) {
-    // //     $('th').eq(0).replaceWith('<h6>' + $('th').eq(0).html() + '</h6>');
-    // // }
-    // // while ($('tbody').length > 0) {
-    // //     $('tbody').eq(0).replaceWith('<div>' + $('tbody').eq(0).html() + '</div>');
-    // // }
+    while ($('tr').length > 0) {
+        $('tr').eq(0).replaceWith('<div class="row">' + $('tr').eq(0).html() + '</div>');
+    }
+    while ($('table').length > 0) {
+        $('table').eq(0).replaceWith('<div class="card-panel">' + $('table').eq(0).html() + '</div>');
+    }
     // // $('br').remove();
     // while ($('b').length > 0) {
     //     $('b').eq(0).replaceWith("<h6>" + $('b').eq(0).html() + "</h6>");
@@ -69,23 +71,25 @@ $(function () {
     // while ($('font').length > 0) {
     //     $('font').eq(0).replaceWith('<div class="flow-text">' + $('font').eq(0).html() + '</div>');
     // }
-    // // $('tr').eq(0).remove();
-    // // while ($('td').length > 0) {
-    // //     $('td').eq(0).replaceWith('<div class="col"><td>' + $('td').eq(0).html() + '</td></div>');
-    // // }
-    // // while ($('tr').length > 0) {
-    // //     $('tr').eq(0).replaceWith('<div class="card-panel"><div class="row">' + $('tr').eq(0).html() + '</div></div>');
-    // // }
-    // // while ($('table').length > 0) {
-    // //     $('table').eq(0).replaceWith('<div>' + $('table').eq(0).html() + '</div>');
-    // //     // $('table').eq(0).replaceWith('<div class="card-panel">' + $('table').eq(0).html() + '</div>');
-    // // }
+    // $('tr').eq(0).remove();
 
-    // $('.submit5').addClass('btn');
+    $('.submit5').addClass('btn');
+    // $('form').eq(0).addClass(function(){
+    //     $('form').eq(0).children('.col').addClass('right');
+    //     return "col";
+    // });
+    $('.col:has(input)').eq(0).replaceWith('<form action="syllabus_file.asp" method="post" class="col right">' + $('.col:has(input)').eq(0).html() + '</form>')
     // $('.btn').removeClass('submit5');
 
-    // $('#GOOGLE_INPUT_CHEXT_FLAG').remove();
-    // $('iframe').remove();
+    $('.card-panel').addClass('hoverable');
+    $('.col:has(a)').addClass('right');
+    $('a').addClass(function(){
+        return "waves-effect waves-teal btn-flat";
+    });
+    $('.row').eq(1).remove();
+    $('.row:gt(0)').before('<div class="divider"></div>');
 
-    // $('.card-panel').addClass('hoverable');
+    // remove unnecessary elements
+    $('#GOOGLE_INPUT_CHEXT_FLAG').remove();
+    $('iframe').remove();
 });

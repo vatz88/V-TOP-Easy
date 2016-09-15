@@ -3,3 +3,22 @@ body {
     color: #616161 !important;
     font-weight: 300 !important;
 }
+
+.row {
+    margin: 0 !important;
+    padding: 10px !important;
+}
+
+.row:hover {
+    margin: 0 !important;
+    padding: 10px !important;
+    background-color: whitesmoke !important;
+}
+
+a {
+    background-color: lightgrey !important;
+}
+
+a:hover {
+    background-color: lightblue !important;
+}
