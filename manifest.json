@@ -45,6 +45,21 @@
         {
             "css": [
                 "materialize.min.css",
+                "home/home_style.css"
+            ],
+            "js": [
+                "jquery-3.1.0.min.js",
+                "materialize.min.js",
+                "home/home_script.js"
+            ],
+            "matches": [
+                "*://vtop.vit.ac.in/student/home.asp"
+            ],
+            "all_frames": true
+        },
+        {
+            "css": [
+                "materialize.min.css",
                 "stud_home/stud_home_style.css"
             ],
             "js": [
