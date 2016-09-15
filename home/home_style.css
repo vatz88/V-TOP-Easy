@@ -2,6 +2,7 @@ body {
     background-color: #f5f5f5 !important;
     color: #616161 !important;
     font-weight: 300 !important;
+    overflow-y: hidden;
 }
 
 .row {
