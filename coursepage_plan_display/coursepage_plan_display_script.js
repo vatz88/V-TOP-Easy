@@ -81,7 +81,6 @@ $(function () {
     $('.col:has(input)').eq(0).replaceWith('<form action="syllabus_file.asp" method="post" class="col right">' + $('.col:has(input)').eq(0).html() + '</form>')
     // $('.btn').removeClass('submit5');
 
-    $('.card-panel').addClass('hoverable');
     $('.col:has(a)').addClass('right');
     $('a').addClass(function () {
         return "waves-effect waves-teal btn-flat";
@@ -94,12 +93,12 @@ $(function () {
     $('iframe').remove();
 
     // All download button
-    $('.card-panel').eq(1).before('<div class="row"><div class="col right"><button class="btn" id="allDownload">Download all material</button></div><div>');
+    var totalMaterial = $('a').length;
+    $('.card-panel').eq(1).before('<div class="row card-panel"><div class="col flow-text">Total material available for download is ' + totalMaterial + '</div><div class="col right"><button class="btn" id="allDownload">Download all material</button></div><div>');
     $("#allDownload").click(function () {
-        var i = $('a').length - 1;
-        while (i >= 0) {
-            $("a").get(i).click();
-            i--;
+        while (totalMaterial > 0) {
+            $("a").get(totalMaterial-1).click();
+            totalMaterial--;
             sleep(5000);
         }
     });
@@ -111,5 +110,7 @@ $(function () {
             }
         }
     }
+
+    $('.card-panel').addClass('hoverable');
 
 });
