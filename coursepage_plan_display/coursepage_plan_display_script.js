@@ -30,8 +30,8 @@ $(function () {
     $('table').eq(0).replaceWith('<div class="container">' + $('table').eq(0).html() + '</div>');
     var temp = $('tr').eq(1).children();
     var templen = temp.length;
-    while(templen>=0){
-        temp.eq(templen-1).replaceWith('<div class="col s2">' + temp.eq(templen-1).text() + '</div>');
+    while (templen >= 0) {
+        temp.eq(templen - 1).replaceWith('<div class="col s2">' + temp.eq(templen - 1).text() + '</div>');
         templen--;
     }
     $('tr').eq(1).replaceWith('<div class="row">' + $('tr').eq(1).html() + '</div>');
@@ -83,7 +83,7 @@ $(function () {
 
     $('.card-panel').addClass('hoverable');
     $('.col:has(a)').addClass('right');
-    $('a').addClass(function(){
+    $('a').addClass(function () {
         return "waves-effect waves-teal btn-flat";
     });
     $('.row').eq(1).remove();
@@ -92,4 +92,15 @@ $(function () {
     // remove unnecessary elements
     $('#GOOGLE_INPUT_CHEXT_FLAG').remove();
     $('iframe').remove();
+
+    // All download button
+    $('.card-panel').eq(1).before('<div class="row"><div class="col right"><button class="btn" id="allDownload">Download all material</button></div><div>');
+    $("#allDownload").click(function () {
+        var i = $('a').length - 1;
+        while (i >= 0) {
+            $("a").get(i).click();
+            i--;
+        }
+    });
+
 });
