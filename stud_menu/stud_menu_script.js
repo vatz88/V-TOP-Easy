@@ -1,10 +1,14 @@
 $(function () {
 
-    
+
     $('body').prepend('<div class="container"><div class="row card-panel hoverable switch"><label class="col right">Full menu<input id="menuSwitch" type="checkbox" checked><span class="lever"></span>Quick menu</label></div></div>');
-    $('body').append('<div id="customMenu"></div>');
+    $('.container').append('<div id="customMenu"></div>');
     $('table').hide();
-    $('#customMenu').load(chrome.extension.getURL("stud_menu/customMenu.html"));
+    $('#customMenu').load(chrome.extension.getURL("stud_menu/customMenu.html"), function () {
+        $('.collapsible').collapsible({
+            accordion: false
+        });
+    });
     // $('img').remove();
     // $('a').addClass('btn btn-flat');
     // $('a[href="#"]').removeAttr('href');
