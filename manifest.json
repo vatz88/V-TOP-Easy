@@ -60,6 +60,21 @@
         {
             "css": [
                 "materialize.min.css",
+                "stud_menu/stud_menu_style.css"
+            ],
+            "js": [
+                "jquery-3.1.0.min.js",
+                "materialize.min.js",
+                "stud_menu/stud_menu_script.js"
+            ],
+            "matches": [
+                "*://vtop.vit.ac.in/student/stud_menu.asp"
+            ],
+            "all_frames": true
+        },
+        {
+            "css": [
+                "materialize.min.css",
                 "stud_home/stud_home_style.css"
             ],
             "js": [
@@ -149,7 +164,8 @@
         }
     ],
     "web_accessible_resources": [
-        "stud_login/stud_login.html"
+        "stud_login/stud_login.html",
+        "stud_menu/customMenu.html"
     ] //,
     // "-ms-preload": {
     //     "backgroundScript": "backgroundScriptsAPIBridge.js",
