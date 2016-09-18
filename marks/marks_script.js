@@ -27,7 +27,7 @@ $(function () {
     $('table').eq(1).replaceWith('<table>' + $('table').eq(1).html() + '</table>');
 
     $('table').addClass(function(){
-        return 'centered highlight z-depth-1';
+        return 'centered hoverable highlight z-depth-1';
     });
 
     // for(var i=$('td').length-1; i>=0; i--){
