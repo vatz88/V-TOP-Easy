@@ -39,8 +39,8 @@ $(function () {
     $('#demo33').addClass('datepicker');
     $('#demo32').attr('placeholder','Select from date');
     $('#demo33').attr('placeholder','Select to date');
-    $('#demo32').attr('value','11-07-2015');
-    $('#demo33').attr('value','11-11-2018');
+    $('#demo32').attr('value','11-07-2016');
+    $('#demo33').attr('value','11-11-2016');
 
     $('form').eq(0).prepend('<b>CGPA<b>');
 

@@ -1,12 +1,17 @@
 {
     "manifest_version": 2,
     "name": "V-TOP Easy",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "description": "Better experience with using VIT student login.",
     "author": "Vatsal Joshi",
     "browser_action": {
         "default_popup": "popup.html",
         "default_title": "V-TOP Easy"
+    },
+    "icons": {
+        // "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
     },
     "permissions": [
         "tabs"
@@ -119,12 +124,12 @@
         },
         {
             "css": [
-                "materialize.min.css"//,
+                "materialize.min.css" //,
                 // "attn_report_details/attn_report_details_style.css"
             ],
             "js": [
                 "jquery-3.1.0.min.js",
-                "materialize.min.js"//,
+                "materialize.min.js" //,
                 // "attn_report_details/attn_report_details.js"
             ],
             "matches": [
