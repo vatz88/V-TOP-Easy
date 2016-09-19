@@ -37,10 +37,8 @@ $(function () {
     $('#demo33').attr('type', 'date');
     $('#demo33').removeAttr('readonly');
     $('#demo33').addClass('datepicker');
-    $('#demo32').attr('placeholder','Select from date');
-    $('#demo33').attr('placeholder','Select to date');
-    $('#demo32').attr('value','11-07-2016');
-    $('#demo33').attr('value','11-11-2016');
+    $('#demo32').attr('placeholder', 'Select from date');
+    $('#demo33').attr('placeholder', 'Select to date');
 
     $('form').eq(0).prepend('<b>CGPA<b>');
 
@@ -82,4 +80,11 @@ $(function () {
         selectMonths: true, // Creates a dropdown to control month
         selectYears: 5 // Creates a dropdown of 15 years to control year
     });
+    // set default date
+    var $input = $('#demo32').pickadate();
+    var picker = $input.pickadate('picker');
+    picker.set('select', [2016, 06, 11]);
+    $input = $('#demo33').pickadate();
+    picker = $input.pickadate('picker');
+    picker.set('select', [2016, 10, 11]);
 });
