@@ -42,6 +42,5 @@ $(function () {
     $('center').eq(0).replaceWith('<h4>' + $('center').eq(0).text() + '</h4>');
 
     // remove useless elements
-    $('#GOOGLE_INPUT_CHEXT_FLAG').remove();
     $('iframe').remove();
 });
