@@ -1,5 +1,23 @@
-/*body {
+body {
     background-color: #f5f5f5 !important;
     color: #616161 !important;
-    font-weight: 300 !important;
-}*/
+}
+
+table {
+    background-color: white !important;
+    font-size: 14px !important;
+    margin-bottom: 15px!important;
+    margin-top: 15px!important;
+}
+
+td, th {
+    border: 0.25px solid lightgrey !important;
+}
+
+tr:first-child {
+    font-weight: bold;
+}
+
+.container {
+    width: 88% !important;
+}
