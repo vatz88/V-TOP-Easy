@@ -45,7 +45,7 @@ $(function () {
     $('iframe[src="content.asp"]').css('width', '100%');
     $('iframe[src="content.asp"]').css('height', '85%');
 
-    $('iframe:last').remove();
+    // $('iframe:last').remove();
     $('img').remove();
     $('br').remove();
     $('font').remove();
