@@ -88,20 +88,32 @@ $(function () {
     $('.row').eq(1).remove();
     $('.row:gt(0)').before('<div class="divider"></div>');
 
-    // remove unnecessary elements
-    $('#GOOGLE_INPUT_CHEXT_FLAG').remove();
-    $('iframe').remove();
+    // Download check box
+    for (var i = $('.btn-flat').length - 1; i >= 0; i--) {
+        $('.btn-flat').eq(i).before('<span><input type="checkbox" id="' + i + '"/><label for="' + i + '"></label></span>');
+    }
 
-    // All download button
-    var totalMaterial = $('a').length;
-    $('.card-panel').eq(1).before('<div class="row card-panel"><div class="col flow-text">Total material available for download is ' + totalMaterial + '</div><div class="col right"><button class="btn" id="allDownload">Download all material</button></div><div>');
-    $("#allDownload").click(function () {
-        while (totalMaterial > 0) {
-            $("a").get(totalMaterial-1).click();
-            totalMaterial--;
+    // Download files
+    $('.card-panel').eq(1).before('<div class="row center-align card-panel"><div class="col s6"><button class="btn" id="downloadAll">Download all</button></div><div class="col s6 right"><button class="btn" id="downloadSelected">Download selected</button></div></div>');
+    // Download selected
+    $("#downloadSelected").click(function () {
+        for (var i = $('.btn-flat').length - 1; i >= 0; i--) {
+            if($('input[type="checkbox"]').eq(i).prop('checked')){
+                $('a').get(i).click();
+                sleep(5000);
+            }
+        }
+    });
+    // Download all
+    $("#downloadAll").click(function () {
+        var totalFiles = $('a').length;
+        while (totalFiles > 0) {
+            $("a").get(totalFiles-1).click();
+            totalFiles--;
             sleep(5000);
         }
     });
+
     function sleep(milliseconds) {
         var start = new Date().getTime();
         for (var i = 0; i < 1e7; i++) {
