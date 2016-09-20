@@ -124,13 +124,13 @@
         },
         {
             "css": [
-                "materialize.min.css" //,
-                // "attn_report_details/attn_report_details_style.css"
+                "materialize.min.css",
+                "attn_report_details/attn_report_details_style.css"
             ],
             "js": [
                 "jquery-3.1.0.min.js",
-                "materialize.min.js" //,
-                // "attn_report_details/attn_report_details.js"
+                "materialize.min.js",
+                "attn_report_details/attn_report_details_script.js"
             ],
             "matches": [
                 "*://vtop.vit.ac.in/student/attn_report_details.asp*"
