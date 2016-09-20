@@ -25,7 +25,7 @@ $(function () {
     $('center').eq(0).replaceWith('<h5>' + $('center').eq(0).text() + '</h5>');
 
     // table 1 courses registered
-    $('table').eq(0).find('tr:not(:nth-last-child(2))').find('td:first-child').remove(); // table 1 remove useless rows and column
+    // $('table').eq(0).find('tr:not(:nth-last-child(2))').find('td:first-child').remove(); // table 1 remove useless rows and column
     $('table').eq(0).find('td:last').attr('colspan','14');
 
     // table 2 timetable
@@ -39,7 +39,4 @@ $(function () {
     $('table').addClass(function(){
         return 'centered hoverable highlight z-depth-1';
     });
-
-    // remove useless elements
-    $('iframe').remove();
 });
