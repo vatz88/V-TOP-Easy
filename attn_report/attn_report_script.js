@@ -42,9 +42,6 @@ $(function () {
 
     $('form').eq(0).prepend('<b>CGPA<b>');
 
-    // 
-    // $('table').eq(0).replaceWith('<div class="card-panel">' + $('table').eq(0).html() + '</div>');
-    // $('tr').eq(0).remove();
     while ($('table').eq(2).find('td').length > 0) {
         $('table').eq(2).find('td').eq(0).replaceWith('<div class="col s1 center-align"><td>' + $('table').eq(2).find('td').eq(0).html() + '</td></div>');
     }
@@ -55,7 +52,6 @@ $(function () {
         $('table').eq(2).replaceWith('<div>' + $('table').eq(2).html() + '</div>');
     }
     $('.col:first-child').remove(); //Sr. no.
-    // $('.col:last-child').addClass('right');
     $('.col:nth-child(2)').addClass('s2 boldCol');
     $('.col:nth-child(8)').append('%');
     $('.col:nth-child(8)').addClass('boldCol');
@@ -67,9 +63,6 @@ $(function () {
         $(".btn").parent().eq(i).replaceWith('<form method="post" action="attn_report_details.asp">' + $(".btn").parent().eq(i).html() + '</form>');
     }
     $(".submit3").addClass('btn');
-
-    // remove useless elements
-    $('iframe').remove();
 
     $('table').addClass(function () {
         return 'centered hoverable highlight z-depth-1';

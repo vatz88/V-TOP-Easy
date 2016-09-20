@@ -20,15 +20,12 @@ $(function () {
 
     $('table').eq(0).replaceWith('<div class="container">' + $('table').eq(0).html() + '</div>');
 
-    $('table').addClass(function(){
+    $('table').addClass(function () {
         return 'centered hoverable highlight z-depth-1';
     });
 
-    while($('b').length > 0){
+    while ($('b').length > 0) {
         $('b').eq(0).replaceWith('<div style="font-weight:bold;">' + $('b').eq(0).text() + '</div>');
     }
     $('center').eq(0).replaceWith('<h5>' + $('center').eq(0).text() + '</h5>');
-
-    // remove useless elements
-    $('iframe').remove();
 });

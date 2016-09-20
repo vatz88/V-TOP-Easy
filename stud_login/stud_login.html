@@ -12,7 +12,8 @@
 		<div class="row">
 			<label>Register No.</label>
 			<div>
-				<input type="text" name="regno" class="textbox2" size="20" maxlength="9" tabindex="1">
+				<input type="text" name="regno" class="textbox2" size="20" maxlength="9" tabindex="1" style="text-transform:uppercase;" placeholder="Don't worry about lower case!"
+					onchange="this.value=this.value.toUpperCase()">
 			</div>
 		</div>
 
@@ -29,7 +30,8 @@
 				<img src="captcha.asp" id="imgCaptcha" onContextMenu="return false;" ondrag="return false;" onmousedown="return false;">
 			</div>
 			<div>
-				<input type="text" name="vrfcd" class="textbox" size="10" maxlength="6" tabindex="1" style="text-transform:uppercase;" placeholder="Don't worry about lower case!" onchange="this.value=this.value.toUpperCase()">
+				<input type="text" name="vrfcd" class="textbox" size="10" maxlength="6" tabindex="1" style="text-transform:uppercase;" placeholder="Don't worry about lower case!"
+					onchange="this.value=this.value.toUpperCase()">
 				<a href="javascript:void(0);" onclick="RefreshImage('imgCaptcha');">Change Verification Code</a>
 			</div>
 		</div>

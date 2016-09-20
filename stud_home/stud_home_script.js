@@ -1,13 +1,6 @@
 $(function () {
     $('link[href="style.css"]').remove(); //remove remove default css file
     $('link[href="style2.css"]').remove();
-    // $("body").addClass("container");
-    // $('body').load(chrome.extension.getURL("stud_login/stud_login.html")); //Content inside body tag will be replaced by content in stud_login.html
-    // $('table').contents().unwrap();
-    // $('tbody').contents().unwrap();
-    // $('tr').contents().unwrap();
-    // $('td').contents().unwrap();
-    // $('th').contents().unwrap();
 
     // Removing inline css
     $('font').contents().unwrap();
@@ -27,7 +20,7 @@ $(function () {
     // marquee title
     var x_marquee = $('marquee');
     var x_title = $("a[onclick]");
-    for(var i=0; i<x_marquee.length; ++i){
+    for (var i = 0; i < x_marquee.length; ++i) {
         var title = x_marquee.eq(i).find('title').text();
         var title_onclick = x_title.eq(i).attr('onclick');
         x_marquee.eq(i).before('<hr><a href="#" onclick="' + title_onclick + '">' + title + '</a><div class="divider"></div>');
@@ -35,14 +28,8 @@ $(function () {
     x_title.remove();
 
     $('marquee').addClass('card-panel');
-    // $('table').replaceWith('<div>' + $('table').html() +'</div>');
-    // $('tbody').replaceWith('<div>' + $('tbody').html() +'</div>');
-    // $('tr').replaceWith('<div>' + $('tr').html() +'</div>');
-    // $('td').replaceWith('<div>' + $('td').html() +'</div>');
 
     // Remove unnecessary elements
-    $('#GOOGLE_INPUT_CHEXT_FLAG').remove();
-    $('iframe').remove();
     $('br').remove();
 
     // Replace table and its childrens with div or appropriate tag
@@ -61,7 +48,6 @@ $(function () {
     while ($('th').length > 0) {
         $('th').eq(0).replaceWith('<h6>' + $('th').eq(0).html() + '</h6>');
     }
-    // $('b').remove();
     while ($('b').length > 0) {
         $('b').eq(0).replaceWith("<p>" + $('b').eq(0).html() + "</p>");
     }
@@ -70,38 +56,18 @@ $(function () {
     $("<div class='card-panel'><div class='row' id='attendenceCard'></div></div>").insertBefore(".main_content");
     while ($("img[src='HTMLGraph/images/1x1_83C4FE.gif']").length > 0) {
         var imgTitle = $("img[src='HTMLGraph/images/1x1_83C4FE.gif']").eq(0).attr('title');
-        // var imgTitlel75 = $("img[src='HTMLGraph/images/1x1_FFC19F.gif']").eq(0).attr('title');
         imgTitle = imgTitle.split(":");
-        // imgTitlel75 = imgTitlel75.split(":");
-        
         // >75
         $("#attendenceCard").append("<div class='col'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
-        // <75
-        // $("#attendenceCard").append("<div class='col' style='color:red'>" + imgTitlel75[0] + " " + "<b>" + imgTitlel75[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitlel75[1] + "%'></div></div></div>");
-
-        // if (imgTitle[1] > 75) {
-            
-        // } else if (imgTitle[1] == 75) {
-        //     $("#attendenceCard").append("<div class='col' style='color:orange'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
-        // } else {
-        //     // $("#attendenceCard").append("<div class='col' style='color:red'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
-        //     $("#attendenceCard").append("<div class='col' style='color:red'>" + imgTitle[0] + " " + "<b>" + imgTitle[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitle[1] + "%'></div></div></div>");
-        // }
         $("img[src='HTMLGraph/images/1x1_83C4FE.gif']").eq(0).remove();
-        // $("img[src='HTMLGraph/images/1x1_FFC19F.gif']").eq(0).remove();
     }
     while ($("img[src='HTMLGraph/images/1x1_FFC19F.gif']").length > 0) {
-        // var imgTitle = $("img[src='HTMLGraph/images/1x1_83C4FE.gif']").eq(0).attr('title');
         var imgTitlel75 = $("img[src='HTMLGraph/images/1x1_FFC19F.gif']").eq(0).attr('title');
-        // imgTitle = imgTitle.split(":");
         imgTitlel75 = imgTitlel75.split(":");
-        
         // <75
         $("#attendenceCard").append("<div class='col' style='color:red'>" + imgTitlel75[0] + " " + "<b>" + imgTitlel75[1] + "%</b>" + "<div class='progress'><div class='determinate' style='width: " + imgTitlel75[1] + "%'></div></div></div>");
-
         $("img[src='HTMLGraph/images/1x1_FFC19F.gif']").eq(0).remove();
     }
-
 
     $(".main_content").remove();
 

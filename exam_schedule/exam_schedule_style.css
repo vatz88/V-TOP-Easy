@@ -20,4 +20,5 @@ tr:first-child {
 
 .container {
     width: 88% !important;
+    margin-bottom: 10px !important;
 }

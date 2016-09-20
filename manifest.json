@@ -201,10 +201,5 @@
     "web_accessible_resources": [
         "stud_login/stud_login.html",
         "stud_menu/customMenu.html"
-    ] //,
-    // "-ms-preload": {
-    //     "backgroundScript": "backgroundScriptsAPIBridge.js",
-    //     "contentScript": "contentScriptsAPIBridge.js"
-    // }
-    //for edge compatiblity
+    ]
 }

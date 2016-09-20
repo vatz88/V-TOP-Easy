@@ -1,13 +1,6 @@
 $(function () {
     $("link[href='style2.css']").remove(); //remove remove default css file
 
-    // $('body').load(chrome.extension.getURL("stud_login/stud_login.html")); //Content inside body tag will be replaced by content in stud_login.html
-    // $('table').contents().unwrap();
-    // $('tbody').contents().unwrap();
-    // $('tr').contents().unwrap();
-    // $('td').contents().unwrap();
-    // $('th').contents().unwrap();
-
     // Removing inline css
     $('font').contents().unwrap();
     $('u').contents().unwrap();
@@ -40,14 +33,6 @@ $(function () {
     $('table').eq(0).replaceWith('<div class="card-panel">' + $('table').eq(0).html() + '</div>');
     // End of first table
 
-    // $('td').replaceWith('<div class="col">' + $('td').html() +'</div>');
-    // $('tr').replaceWith('<div class="row">' + $('tr').html() +'</div>');
-    // $('table').replaceWith('<div class="card-panel">' + $('table').html() +'</div>');
-    // $('tbody').replaceWith('<div>' + $('tbody').html() +'</div>');
-
-    // $('tr').eq(0).remove();
-    // $('table').eq(1).replaceWith('<div class="card-panel">' + $('table').eq(1).html() + '</div>');
-
     // convert tr to .row and td to .col
     while ($('th').length > 0) {
         $('th').eq(0).replaceWith('<h6>' + $('th').eq(0).html() + '</h6>');
@@ -55,31 +40,16 @@ $(function () {
     while ($('td').length > 0) {
         $('td').eq(0).replaceWith('<div class="col">' + $('td').eq(0).html() + '</div>');
     }
-    // while ($('font').length > 0) {
-    //     $('font').eq(0).replaceWith('<div class="col">' + $('font').eq(0).html() + '</div>');
-    // }
     while ($('tr').length > 0) {
         $('tr').eq(0).replaceWith('<div class="row">' + $('tr').eq(0).html() + '</div>');
     }
     while ($('table').length > 0) {
         $('table').eq(0).replaceWith('<div class="card-panel">' + $('table').eq(0).html() + '</div>');
     }
-    // // $('br').remove();
-    // while ($('b').length > 0) {
-    //     $('b').eq(0).replaceWith("<h6>" + $('b').eq(0).html() + "</h6>");
-    // }
-    // while ($('font').length > 0) {
-    //     $('font').eq(0).replaceWith('<div class="flow-text">' + $('font').eq(0).html() + '</div>');
-    // }
-    // $('tr').eq(0).remove();
 
     $('.submit5').addClass('btn');
-    // $('form').eq(0).addClass(function(){
-    //     $('form').eq(0).children('.col').addClass('right');
-    //     return "col";
-    // });
+
     $('.col:has(input)').eq(0).replaceWith('<form action="syllabus_file.asp" method="post" class="col right">' + $('.col:has(input)').eq(0).html() + '</form>')
-    // $('.btn').removeClass('submit5');
 
     $('.col:has(a)').addClass('right');
     $('a').addClass(function () {
@@ -98,7 +68,7 @@ $(function () {
     // Download selected
     $("#downloadSelected").click(function () {
         for (var i = $('.btn-flat').length - 1; i >= 0; i--) {
-            if($('input[type="checkbox"]').eq(i).prop('checked')){
+            if ($('input[type="checkbox"]').eq(i).prop('checked')) {
                 $('a').get(i).click();
                 sleep(5000);
             }
@@ -108,7 +78,7 @@ $(function () {
     $("#downloadAll").click(function () {
         var totalFiles = $('a').length;
         while (totalFiles > 0) {
-            $("a").get(totalFiles-1).click();
+            $("a").get(totalFiles - 1).click();
             totalFiles--;
             sleep(5000);
         }
