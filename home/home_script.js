@@ -21,7 +21,7 @@ $(function () {
     $('*').removeAttr('face');
 
     $('body').prepend('<div class="container"><div id="header-section" class="card-panel hoverable"></div></div>');
-    $('#header-section').append('<h3 style="margin-bottom:10px;margin-top:0;" class="center-align">V-TOP Easy</h3>');
+    $('#header-section').append('<h4 style="margin-bottom:10px;margin-top:0;" class="center-align">V-TOP Easy</h4>');
     var findName = $('font').eq(1).text().split("-");
     findName = findName[0].split(" ");
     nameMsg = "Hi";
@@ -29,7 +29,7 @@ $(function () {
     for (var j = 5; j < i; j++) {
         nameMsg = nameMsg + " " + findName[j];
     }
-    $('#header-section').append('<div class="row"><div class="col flow-text">' + nameMsg + '</div><div class="col right"><a class="btn" href="stud_logout.asp">LOGOUT</a></div></div>');
+    $('#header-section').append('<div class="row"><div class="col">' + nameMsg + '</div><div class="col right"><a class="btn" href="stud_logout.asp">LOGOUT</a></div></div>');
 
     $('table').eq(2).replaceWith('<div class="container-fluid">' + $('table').eq(2).html() + '</div>');
     $('table').remove();
