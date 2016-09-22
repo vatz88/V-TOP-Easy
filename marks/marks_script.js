@@ -28,6 +28,15 @@ $(function () {
         return 'centered hoverable highlight z-depth-1';
     });
 
+    var i = $('tr').length - 1;
+    while(i >=0 ){
+        if($('tr').eq(i).children('td').length == 10){
+            $('tr').eq(i).css('font-weight','bold');
+            $('tr').eq(i).css('font-size','larger');
+        }
+        i--;
+    }
+
     while ($('b').length > 0) {
         $('b').eq(0).replaceWith('<h5>' + $('b').eq(0).text() + '</h5>');
     }
