@@ -3,7 +3,7 @@
     "name": "VIT University V-TOP Easy",
     "short_name" : "V-TOP Easy",
     "version": "1.1",
-    "description": "Materialize VIT Student Login",
+    "description": "Materialize VIT student login along with some amazing features.",
     "author": "Vatsal Joshi",
     "browser_action": {
         "default_popup": "popup.html",
@@ -200,6 +200,7 @@
     ],
     "web_accessible_resources": [
         "stud_login/stud_login.html",
-        "stud_menu/customMenu.html"
+        "stud_menu/customMenu.html",
+        "https://fonts.googleapis.com/css?family=Roboto*"
     ]
 }
