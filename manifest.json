@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "VIT University V-TOP Easy",
     "short_name" : "V-TOP Easy",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Materialize VIT Student Login",
     "author": "Vatsal Joshi",
     "browser_action": {
