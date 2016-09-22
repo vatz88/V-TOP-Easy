@@ -1,8 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "V-TOP Easy",
+    "name": "VIT University V-TOP Easy",
+    "short_name" : "V-TOP Easy",
     "version": "1.0",
-    "description": "Materialize VIT student login.",
+    "description": "Materialize VIT Student Login",
     "author": "Vatsal Joshi",
     "browser_action": {
         "default_popup": "popup.html",
@@ -13,10 +14,8 @@
         "48": "icons/icon48.png",
         "128": "icons/icon128.png"
     },
-    "permissions": [
-        "tabs"
-    ],
     "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "offline_enabled": false,
     "content_scripts": [
         {
             "css": [
