@@ -1,0 +1,6 @@
+{
+  "name": "V-top-easy",
+  "tagline": "Web browser extension which will materialize VIT student login",
+  "body": "# V-TOP-Easy\r\nWeb browser extension that will materialize V-TOP student login.\r\n\r\nExtension is useful to students of VIT University, Vellore campus.\r\n\r\nThe extension uses open source libraries - materialize css and jQuery.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
