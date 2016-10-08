@@ -29,10 +29,10 @@ $(function () {
     });
 
     var i = $('tr').length - 1;
-    while(i >=0 ){
-        if($('tr').eq(i).children('td').length == 10){
-            $('tr').eq(i).css('font-weight','bold');
-            $('tr').eq(i).css('font-size','larger');
+    while (i > 0) {
+        if ($('tr').eq(i).children('td').length == 10) {
+            $('tr').eq(i).css('background-color', '#607D8B');
+            $('tr').eq(i).css('color', 'white');
         }
         i--;
     }

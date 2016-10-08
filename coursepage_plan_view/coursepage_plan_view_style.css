@@ -3,3 +3,7 @@ body {
     color: #616161 !important;
     font-weight: 300 !important;
 }
+
+.col:nth-child(4), .col:nth-child(5) {
+    font-weight: 500;
+}

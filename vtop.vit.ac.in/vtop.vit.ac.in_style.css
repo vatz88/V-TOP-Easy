@@ -13,6 +13,7 @@ input:-webkit-autofill {
 
 marquee {
     min-height: 250px;
+    max-height: 500px;
 }
 
 marquee a:hover {

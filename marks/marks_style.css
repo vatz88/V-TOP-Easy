@@ -13,7 +13,7 @@ td, th {
 }
 
 tr:first-child {
-    font-size: larger;
+    font-weight: 500;
 }
 
 .container {

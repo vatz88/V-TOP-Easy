@@ -52,11 +52,14 @@ $(function () {
         $('table').eq(2).replaceWith('<div>' + $('table').eq(2).html() + '</div>');
     }
     $('.col:first-child').remove(); //Sr. no.
-    $('.col:nth-child(2)').addClass('s2 boldCol');
+    $('.col:nth-child(2)').addClass('s2 boldCol'); //course title
+    $('.col:nth-child(4)').addClass('s2'); // slot
     $('.col:nth-child(8)').append('%');
     $('.col:nth-child(8)').addClass('boldCol');
+    $('.col:nth-child(5)').remove(); //Reg. Date
 
-    $("input[type='submit']").addClass('btn');
+    $("input[type='submit']").addClass('btn col');
+    $('.col:last-child').addClass('right');
     var i = $(".btn").parent().length - 1;
     while (i >= 0) {
         i--;

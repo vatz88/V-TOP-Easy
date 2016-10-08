@@ -18,6 +18,10 @@ tr:first-child {
     font-weight: bold;
 }
 
+td:nth-last-child(1), td:nth-last-child(2) {
+    font-weight: bold;
+}
+
 .container {
     width: 88% !important;
     margin-bottom: 10px !important;

@@ -34,7 +34,7 @@ $(function () {
         if (x == 'ALL' || x == 'Lab Only' || x == 'Theory Only' || x == 'Embedded Theory' || x == 'Embedded Lab') {
             $('td').eq(0).remove();
         }
-        $('td').eq(0).replaceWith('<div class="col"><td>' + $('td').eq(0).html() + '</td></div>');
+        $('td').eq(0).replaceWith('<div class="col s2"><td>' + $('td').eq(0).html() + '</td></div>');
     }
     while ($('tr').length > 0) {
         $('tr').eq(0).replaceWith('<div class="card-panel"><div class="row">' + $('tr').eq(0).html() + '</div></div>');

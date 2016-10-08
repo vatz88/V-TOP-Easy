@@ -24,6 +24,9 @@ $(function () {
         return 'centered hoverable highlight z-depth-1';
     });
 
+    $('td[colspan="11"]:not(:last)').css('background-color', '#607D8B');
+    $('td[colspan="11"]:not(:last)').css('color', 'white');
+
     while ($('b').length > 0) {
         $('b').eq(0).replaceWith('<div style="font-weight:bold;">' + $('b').eq(0).text() + '</div>');
     }
