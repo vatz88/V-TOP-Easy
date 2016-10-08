@@ -4,6 +4,10 @@ body {
     font-weight: 300 !important;
 }
 
+.container {
+    width: 88%;
+}
+
 .row {
     margin: 0 !important;
     padding: 10px !important;

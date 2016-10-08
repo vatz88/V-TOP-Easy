@@ -49,7 +49,7 @@ $(function () {
 
     $('.submit5').addClass('btn');
 
-    $('.col:has(input)').eq(0).replaceWith('<form action="syllabus_file.asp" method="post" class="col right">' + $('.col:has(input)').eq(0).html() + '</form>')
+    $('.col:has(input)').eq(0).replaceWith('<form action="syllabus_file.asp" method="post" class="col right">' + $('.col:has(input)').eq(0).html() + '</form>');
 
     $('.col:has(a)').addClass('right');
     $('a').addClass(function () {
@@ -63,14 +63,17 @@ $(function () {
         $('.btn-flat').eq(i).before('<span><input type="checkbox" id="' + i + '"/><label for="' + i + '"></label></span>');
     }
 
-    // Download files
+    // Download button
     $('.card-panel').eq(1).before('<div class="row center-align card-panel"><div class="col s6"><button class="btn" id="downloadAll">Download all</button></div><div class="col s6 right"><button class="btn" id="downloadSelected">Download selected</button></div></div>');
+    $('.card-panel').addClass('hoverable');
+
+    // Multiple Download
     // Download selected
     $("#downloadSelected").click(function () {
         for (var i = $('.btn-flat').length - 1; i >= 0; i--) {
             if ($('input[type="checkbox"]').eq(i).prop('checked')) {
                 $('a').get(i).click();
-                sleep(5000);
+                sleep(4000);
             }
         }
     });
@@ -80,7 +83,7 @@ $(function () {
         while (totalFiles > 0) {
             $("a").get(totalFiles - 1).click();
             totalFiles--;
-            sleep(5000);
+            sleep(4000);
         }
     });
 
@@ -92,7 +95,4 @@ $(function () {
             }
         }
     }
-
-    $('.card-panel').addClass('hoverable');
-
 });
