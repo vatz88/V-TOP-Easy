@@ -210,7 +210,6 @@
     ],
     "web_accessible_resources": [
         "stud_login/stud_login.html",
-        "stud_menu/customMenu.html",
-        "https://fonts.googleapis.com/css?family=Roboto*"
+        "stud_menu/customMenu.html"
     ]
 }

@@ -31,7 +31,7 @@ $(function () {
     $('tr').eq(0).remove();
     while ($('td').length > 0) {
         var x = $('td').eq(0).text()
-        if (x == 'ALL' || x == 'Lab Only' || x == 'Theory Only' || x == 'Embedded Theory' || x == 'Embedded Lab') {
+        if (x == 'ALL' || x == 'Lab Only' || x == 'Theory Only' || x == 'Embedded Theory' || x == 'Embedded Lab' || x == 'Soft Skill') {
             $('td').eq(0).remove();
         }
         $('td').eq(0).replaceWith('<div class="col s2"><td>' + $('td').eq(0).html() + '</td></div>');
