@@ -19,7 +19,7 @@ The latest version is v1.2.0. For the versions available, see the [tags on this 
 
 * **Vatsal Joshi** - *Initial work* - [VaTz88](https://github.com/VaTz88)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/VaTz88/V-TOP-Easy/contributors) who participated in this project.
 
 ## License
 
