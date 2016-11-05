@@ -6,7 +6,7 @@ body {
 }
 
 marquee {
-    max-height: 500px;
+    max-height: 400px;
 }
 
 marquee a:hover {

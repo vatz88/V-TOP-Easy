@@ -210,7 +210,6 @@
     ],
     "web_accessible_resources": [
         "stud_login/stud_login.html",
-        "stud_menu/customMenu.html",
-        "fonts/roboto/*.ttf"
+        "stud_menu/customMenu.html"
     ]
 }
