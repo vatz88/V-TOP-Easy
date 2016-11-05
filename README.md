@@ -13,7 +13,7 @@ Please read [Wikis](https://github.com/VaTz88/V-TOP-Easy/wiki) for details on ou
 
 ## Versioning
 
-The latest version is v1.2.0. For the versions available, see the [tags on this repository](https://github.com/VaTz88/V-TOP-Easy/tags). 
+The latest version is v1.2.0. For all the versions, see the [tags on this repository](https://github.com/VaTz88/V-TOP-Easy/tags). 
 
 ## Authors
 
