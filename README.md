@@ -1,3 +1,5 @@
+> **This project is now merged with [VITacademics Enhancement Suite](https://github.com/rahulkapoor90/VITacademics-Enhancement-Suite).**
+
 # V-TOP Easy
 
 A web browser extension to materialize VIT student login along with some amazing features.
