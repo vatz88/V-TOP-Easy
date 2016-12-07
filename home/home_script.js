@@ -21,7 +21,7 @@ $(function () {
     $('*').removeAttr('face');
 
     $('body').prepend('<div class="container"><div id="header-section" class="card-panel hoverable"></div></div>');
-    $('#header-section').append('<h4 style="margin-bottom:10px;margin-top:0;" class="center-align">V-TOP Easy</h4>');
+    $('#header-section').append('<h4 style="margin-bottom:10px;margin-top:0;" class="center-align">VIT Academics Enhancement Suite</h4>');
     var findName = $('font').eq(1).text().split("-");
     findName = findName[0].split(" ");
     nameMsg = "Hi";
