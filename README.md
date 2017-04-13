@@ -31,6 +31,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * [AutoCaptcha for VITacademics](https://github.com/karthikb351/AutoCaptcha-for-VITacademics) for AutoCaptcha code.
 
-<br><hr>
+_________________________
 
 ![Alt text](https://raw.githubusercontent.com/VaTz88/V-TOP-Easy/master/V-TOP%20Easy%20milestone1.png "Milestone 1")
