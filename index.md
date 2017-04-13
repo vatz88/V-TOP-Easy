@@ -15,7 +15,7 @@ Please read [Wikis](https://github.com/VaTz88/V-TOP-Easy/wiki) for details on ou
 
 ## Versioning
 
-The latest version is v1.2.0. For the versions available, see the [tags on this repository](https://github.com/VaTz88/V-TOP-Easy/tags). 
+The latest version is v1.2.1. For all the versions, see the [tags on this repository](https://github.com/VaTz88/V-TOP-Easy/tags). 
 
 ## Authors
 
@@ -26,3 +26,11 @@ See also the list of [contributors](https://github.com/VaTz88/V-TOP-Easy/contrib
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgments
+
+* [AutoCaptcha for VITacademics](https://github.com/karthikb351/AutoCaptcha-for-VITacademics) for AutoCaptcha code.
+
+<br><hr>
+
+![Alt text](https://raw.githubusercontent.com/VaTz88/V-TOP-Easy/master/V-TOP%20Easy%20milestone1.png "Milestone 1")
