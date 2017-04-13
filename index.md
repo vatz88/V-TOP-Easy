@@ -3,6 +3,8 @@
 A web browser extension to materialize VIT student login along with some amazing features.
 Extension is useful to students of VIT University, Vellore campus.
 
+> **This project is now merged with [VITacademics Enhancement Suite](https://github.com/rahulkapoor90/VITacademics-Enhancement-Suite).**
+
 ## Getting Started
 
 Install the extension from [Chrome Store](https://chrome.google.com/webstore/detail/vit-university-v-top-easy/fdfcegkkhiialnmbnhkjpplpckpkhbmp)
