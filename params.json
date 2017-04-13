@@ -1,6 +1,0 @@
-{
-  "name": "V-TOP-Easy",
-  "tagline": "Web browser extension to materialize VIT student login",
-  "body": "# V-TOP Easy\r\n\r\nA web browser extension to materialize VIT student login along with some amazing features.\r\nExtension is useful to students of VIT University, Vellore campus.\r\n\r\n## Getting Started\r\n\r\nInstall the extension from [Chrome Store](https://chrome.google.com/webstore/detail/vit-university-v-top-easy/fdfcegkkhiialnmbnhkjpplpckpkhbmp)\r\n\r\n## Contributing\r\n\r\nPlease read [Wikis](https://github.com/VaTz88/V-TOP-Easy/wiki) for details on our code of conduct, and the process for submitting pull requests to us.\r\n\r\n## Versioning\r\n\r\nThe latest version is v1.2.0. For the versions available, see the [tags on this repository](https://github.com/VaTz88/V-TOP-Easy/tags). \r\n\r\n## Authors\r\n\r\n* **Vatsal Joshi** - *Initial work* - [VaTz88](https://github.com/VaTz88)\r\n\r\nSee also the list of [contributors](https://github.com/VaTz88/V-TOP-Easy/contributors) who participated in this project.\r\n\r\n## License\r\n\r\nThis project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}

@@ -1,0 +1,8 @@
+title: V-TOP-Easy
+description: Web browser extension to materialize VIT student login
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-hacker
+
+gems:
+  - jekyll-mentions
